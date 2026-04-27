@@ -1,24 +1,24 @@
 # SentinelX 🛰️
 ### **Autonomous Risk Telemetry & Momentum Screener for Solana**
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-cyan.svg)](https://GitHub.com/aakash029-coder/sentinelx/graphs/commit-activity)
+[![BIP Competition](https://img.shields.io/badge/Competition-Birdeye%20BIP-orange.svg)](https://earn.superteam.fun/)
+[![Sprint](https://img.shields.io/badge/Sprint-2-cyan.svg)](https://earn.superteam.fun/)
 [![Solana](https://img.shields.io/badge/Network-Solana-blueviolet.svg)](https://solana.com/)
-[![API](https://img.shields.io/badge/Data-Birdeye%20API-yellow.svg)](https://docs.birdeye.so/)
-[![Framework](https://img.shields.io/badge/Framework-Next.js%2016-white.svg)](https://nextjs.org/)
+[![Data](https://img.shields.io/badge/Powered%20By-Birdeye%20Data-yellow.svg)](https://docs.birdeye.so/)
 
-**SentinelX** is an institutional-grade security dashboard engineered for the **Birdeye Data Hackathon**. It provides real-time monitoring of the Solana network's high-velocity assets, cross-referencing market momentum with deep on-chain security audits to identify "honeypots" and high-risk tokens before they impact retail liquidity.
+**SentinelX** is a high-performance risk intelligence terminal engineered for the **Birdeye Data 4-Week BIP Competition (Sprint 2)**. It provides autonomous monitoring of the Solana network's high-velocity assets, auditing real-time market momentum against deep on-chain security constraints.
 
 ---
 
 ## 🚀 The Vision
 
-In the hyper-speed Solana ecosystem, **"Trending" ≠ "Safe."** SentinelX bridges this intelligence gap by providing autonomous telemetry on every trending asset, ensuring that alpha doesn't come at the cost of safety.
+In the rapid-fire Solana ecosystem, speed often compromises safety. SentinelX is built to solve this by providing institutional-grade telemetry on trending assets, ensuring that builders and traders can identify "honeypots" and high-risk configurations before they impact liquidity.
 
 ### 🛡️ Core Capabilities
-* **Real-Time Momentum Tracking:** Instant ingestion of top trending tokens directly from Birdeye’s high-fidelity feed.
-* **Deep Security Audits:** Automated screening for authority risks, including **Mint Authority**, **Freeze Authority**, and **Transfer Fees**.
-* **Holder concentration Analytics:** Real-time monitoring of top-10 holder percentages and creator balances to flag potential rug-pull patterns.
-* **Graceful UI Degradation:** Features a custom **Heuristic Analysis** fallback engine to maintain dashboard stability and provide risk estimates even during high-traffic API rate-limiting periods.
+* **Dynamic Momentum Tracking:** Instant ingestion of high-velocity tokens directly from Birdeye’s professional-grade data streams.
+* **On-Chain Security Scans:** Automated screening for authority risks, including **Mint Authority**, **Freeze Authority**, and **Transfer Fees**.
+* **Concentration Analytics:** Real-time monitoring of holder distribution and creator balances to flag potential rug-pull patterns.
+* **Heuristic Analysis Fallback:** A custom-built engine designed to maintain dashboard stability and provide risk estimates even during high-traffic API periods.
 
 ---
 
@@ -33,16 +33,16 @@ In the hyper-speed Solana ecosystem, **"Trending" ≠ "Safe."** SentinelX bridge
 
 ---
 
-## 📊 Birdeye API Integration
+## 📊 Birdeye BIP Integration
 
-SentinelX is built on the backbone of Birdeye's professional data endpoints:
+SentinelX leverages Birdeye’s comprehensive data infrastructure to build its risk profiles:
 
-1.  **`defi/token_trending`**: Aggregating high-velocity assets.
-2.  **`defi/token_security`**: Auditing authority controls and ownership distribution.
-3.  **`defi/v3/token/market-data`**: Precision pricing, liquidity, and volume metrics.
+1.  **`defi/token_trending`**: Monitoring market-wide momentum.
+2.  **`defi/token_security`**: Detailed audits of authority and ownership.
+3.  **`defi/v3/token/market-data`**: Institutional-grade pricing and liquidity metrics.
 
-> [!IMPORTANT]
-> **Hackathon Compliance:** This project has successfully logged **250+ API calls** during development and stress testing to satisfy and exceed hackathon requirements.
+> [!TIP]
+> **BIP Performance:** This project has successfully logged **250+ API calls** during development to ensure rigorous stress-testing of the data integration.
 
 ---
 
@@ -50,17 +50,17 @@ SentinelX is built on the backbone of Birdeye's professional data endpoints:
 
 ### **Prerequisites**
 * **Node.js 18+**
-* **Birdeye API Key** ([Acquire one at bds.birdeye.so](https://bds.birdeye.so/))
+* **Birdeye API Key** ([bds.birdeye.so](https://bds.birdeye.so/))
 
 ### **Installation**
 
-1.  **Clone the Repository**
+1.  **Clone & Enter**
     ```bash
     git clone [https://github.com/aakash029-coder/sentinelx.git](https://github.com/aakash029-coder/sentinelx.git)
     cd sentinelx
     ```
 
-2.  **Install Dependencies**
+2.  **Dependencies**
     ```bash
     npm install
     ```
@@ -68,21 +68,20 @@ SentinelX is built on the backbone of Birdeye's professional data endpoints:
 3.  **Environment Setup**
     Create a `.env.local` file in the root directory:
     ```env
-    BIRDEYE_API_KEY=your_real_api_key_here
+    BIRDEYE_API_KEY=your_api_key_here
     ```
 
 4.  **Launch Terminal**
     ```bash
     npm run dev
     ```
-    Visit `http://localhost:3000` to access the telemetry feed.
 
 ---
 
 ## ⚖️ Disclaimer
-SentinelX is a decision-support tool. While it leverages real-time data and heuristic analysis to flag risks, it does not constitute financial advice. **Always verify on-chain data independently.**
+SentinelX is a decision-support tool. While it leverages real-time data to flag risks, it does not constitute financial advice. **Always verify on-chain data independently.**
 
 ---
 <p align="center">
-  Built with ⚡ by <b>Aakash Goswami</b> for the <b>Birdeye Data Hackathon</b> · 2026
+  Built by <b>Aakash Goswami</b> for the <b>Birdeye Data BIP Competition</b> · Sprint 2
 </p>
