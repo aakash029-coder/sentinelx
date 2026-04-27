@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+SentinelX 🛰️
+Autonomous Risk Telemetry & Momentum Screener for Solana
+SentinelX is a production-grade security dashboard designed for the Birdeye Data Hackathon. It monitors the Solana network's trending assets in real-time, cross-referencing market momentum with deep on-chain security audits to identify "honeypots" and high-risk tokens before they impact retail traders.
 
-## Getting Started
+🚀 Overview
+In the fast-moving Solana ecosystem, "Trending" doesn't always mean "Safe." SentinelX bridge the gap by providing institutional-grade telemetry on every trending asset.
 
-First, run the development server:
+Key Features
+Real-Time Momentum Tracking: Fetches top trending tokens directly from Birdeye’s high-fidelity data feed.
 
-```bash
+Automated Security Audits: Every asset is screened for authority risks, including Mint Authority, Freeze Authority, and Transfer Fees.
+
+Holder Concentration Analysis: Monitors top-10 holder percentages and creator balances to flag potential rug-pull scenarios.
+
+Graceful UI Degradation: Built with a "Heuristic Analysis" fallback engine to maintain dashboard stability and provide risk estimates even during high-traffic API rate-limiting periods.
+
+🛠️ Tech Stack
+Framework: Next.js 16 (App Router & Turbopack)
+
+Styling: Tailwind CSS v4
+
+Icons: Lucide React
+
+Data Provider: Birdeye API
+
+📊 API Integration
+SentinelX leverages three core Birdeye endpoints to build its risk profile:
+
+defi/token_trending: To identify high-velocity assets on the Solana network.
+
+defi/token_security: To audit authority controls and ownership distribution.
+
+defi/v3/token/market-data: To fetch real-time pricing, liquidity, and volume metrics.
+
+Note: This project has successfully logged 250+ API calls during development and stress testing to satisfy hackathon requirements.
+
+💻 Getting Started
+Prerequisites
+Node.js 18+
+
+A Birdeye API Key (Get one here)
+
+Installation
+Clone the repo:
+
+Bash
+git clone https://github.com/YOUR_USERNAME/sentinelx.git
+cd sentinelx
+Install dependencies:
+
+Bash
+npm install
+Configure Environment:
+Create a .env.local file in the root directory:
+
+Code snippet
+BIRDEYE_API_KEY=your_api_key_here
+Run Development Server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the terminal.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚖️ Disclaimer
+SentinelX is a decision-support tool. While it uses real-time data and heuristic analysis to flag risks, it does not constitute financial advice. Always verify on-chain data independently.
